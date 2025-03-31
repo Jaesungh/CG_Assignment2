@@ -12,18 +12,21 @@ With Phong Model, I followed material parameters for each object :
 
 - Plane P : ka = (0.2, 0.2, 0.2), kd = (1, 1, 1), ks = (0, 0, 0), with specular
 power 0.
+
 – Sphere S1: ka = (0.2, 0, 0), kd = (1, 0, 0), ks = (0, 0, 0), with specular
 power 0.
+
 – Sphere S2: ka = (0, 0.2, 0), kd = (0, 0.5, 0), ks = (0.5, 0.5, 0.5), with
 specular power 32.
+
 – Sphere S3: ka = (0, 0, 0.2), kd = (0, 0, 1), ks = (0, 0, 0), with specular
 power 0.
 
 ```c++
-		planes.push_back(Plane(vec3(0.0f, 1.0f, 0.0f), 2.0f, vec3(0.2f, 0.2f, 0.2f), vec3(1.0f, 1.0f, 1.0f), vec3(0.0f, 0.0f, 0.0f), 0)); // plane located at y = -2 (white)
-		spheres.push_back(Sphere(vec3(-4.0f, 0.0f, -7.0f), 1.0f, vec3(0.2f, 0.0f, 0.0f), vec3(1.0f, 0.0f, 0.0f), vec3(0.0f, 0.0f, 0.0f), 0)); // s1 (red)
-		spheres.push_back(Sphere(vec3(0.0f, 0.0f, -7.0f), 2.0f, vec3(0.0f, 0.2f, 0.0f), vec3(0.0f, 0.5f, 0.0f), vec3(0.5f, 0.5f, 0.5f), 32)); // s2 (green)
-		spheres.push_back(Sphere(vec3(4.0f, 0.0f, -7.0f), 1.0f, vec3(0.0f, 0.0f, 0.2f), vec3(0.0f, 0.0f, 1.0f), vec3(0.0f, 0.0f, 0.0f), 0)); // s3 (blue)
+planes.push_back(Plane(vec3(0.0f, 1.0f, 0.0f), 2.0f, vec3(0.2f, 0.2f, 0.2f), vec3(1.0f, 1.0f, 1.0f), vec3(0.0f, 0.0f, 0.0f), 0)); // plane located at y = -2 (white)
+spheres.push_back(Sphere(vec3(-4.0f, 0.0f, -7.0f), 1.0f, vec3(0.2f, 0.0f, 0.0f), vec3(1.0f, 0.0f, 0.0f), vec3(0.0f, 0.0f, 0.0f), 0)); // s1 (red)
+spheres.push_back(Sphere(vec3(0.0f, 0.0f, -7.0f), 2.0f, vec3(0.0f, 0.2f, 0.0f), vec3(0.0f, 0.5f, 0.0f), vec3(0.5f, 0.5f, 0.5f), 32)); // s2 (green)
+spheres.push_back(Sphere(vec3(4.0f, 0.0f, -7.0f), 1.0f, vec3(0.0f, 0.0f, 0.2f), vec3(0.0f, 0.0f, 1.0f), vec3(0.0f, 0.0f, 0.0f), 0)); // s3 (blue)
 ```
 
 Light source at (−4, 4, −3), emitting white light with unit intensity and no falloff.
