@@ -134,6 +134,16 @@ After making files exception,
 
 -Compile- Start debugging (F5)
 
+When you see this error,
+
+![image](https://github.com/user-attachments/assets/9e1d3b6d-3d5b-4a5f-98ac-8d9b662a00bf)
+
+https://www.glfw.org/download.html
+
+Download GLFW according to your system ![image](https://github.com/user-attachments/assets/925d03fa-998d-4310-ba7e-dec12c83defe)
+
+And insert glfw.dll file to /bin folder after running solution and rest of the files (glfw3.lib & glfw3_mt.lib & glfw3dll.lib to /lib folder)
+
 ## Short description :
 
 In AntiAliasing.cpp :
